@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<script>
+
+const vowels = ["a", "e", "i", "o", "u"]
+
+function countVowel(str) {
+    
+    let count = 0;
+
+    
+    for (let letter of str.toLowerCase()) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+
+    return count
+}
+
+const string = prompt('Enter a string: ');
+
+const result = countVowel(string);
+
+console.log(result);
+</script>    
+</body>
+</html>
